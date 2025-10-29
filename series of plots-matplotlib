@@ -1,0 +1,9 @@
+# line plot 
+import matplotlib.pyplot as plt 
+x = [1,2,3,4,5] 
+y = [3,7,1,5,9] 
+plt.plot(x,y,color='red') 
+plt.xlabel("X-axis") 
+plt.ylabel("Y-axis") 
+plt.title("Simple Line Plot") 
+plt.show()
