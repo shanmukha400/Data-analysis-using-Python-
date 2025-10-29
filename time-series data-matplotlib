@@ -1,0 +1,14 @@
+import matplotlib.pyplot as plt 
+import matplotlib.dates as mdates 
+import datetime as dt 
+import numpy as np 
+dates = [dt.datetime(2025, 10, i) for i in range(1, 11)] 
+values = np.random.randint(50, 150, size=10) 
+plt.figure(figsize=(8, 5)) 
+plt.plot_date(dates, values, linestyle='solid', marker='o') 
+plt.title("Time Series Data Visualization") 
+plt.xlabel("Date") 
+plt.ylabel("Value") 
+plt.gcf().autofmt_xdate() 
+plt.gca().xaxis.set_major_formatter(mdates.DateFormatter('%d-%b')) 
+plt.show() 
